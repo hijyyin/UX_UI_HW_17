@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #ffffff;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: black;
+  font-family: 'Epilogue', sans-serif;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.heroImg {
+  background-color: #ffffff;
+  display: grid;
+  padding: 50px;
+  text-align: center;
+}
+
+.imga{
+  display:flexbox;
+  padding: 50px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  grid-template-areas:
+  "imga contenta";
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.imga {
+  float: right;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 30%;
+  padding-left: 30%;
+  max-width: 100%; 
+  margin-right: 120px; 
+}
+
+.contenta h4{
+  font-size:18px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.contenta h1{
+  font-size:32px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.contenta p{
+  font-size:16px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.contenta button{
+font-family: 'Epilogue', sans-serif;
+font-size: 16px;
+color: white;
+border-radius: 0px;
+border: 1px solid #28282B;
+padding: 20px 30px;
+background-color: black;
+
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 5px;
+  color: rgb(10, 9, 9);
+  font-family: 'Epilogue', sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer p {
+  display: flex;
+  justify-content: space-evenly;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX work Section */
+.flexContainer01 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.flexContainer01 div {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 25px 50px 25px;
+  text-align: center;
+}
+
+.flexContainer01 h3{
+  font-family: 'Epilogue', sans-serif;
+}
+
+.flexContainer01 p{
+  font-family: 'Epilogue', sans-serif;
+
+}
+
+
+
+.flexContainer02 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexContainer02 div {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 25px 50px 25px;
+  text-align: center;
+}
+
+
+.flexContainer02 h3{
+  font-family: 'Epilogue', sans-serif;
+}
+
+.flexContainer02 p{
+  font-family: 'Epilogue', sans-serif;
+}
+
+.flexContainer01 img,
+.flexContainer02 img {
+  max-width: 100%; 
+  margin: 0 auto; 
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .heroGrid {
+    flex-direction: column;
+  }
+  .heroGrid {
+    grid-template-columns: 50% 50%; /* Two columns when screen width is at least 768px */
+    align-items: center;
+    text-align: left;
+  }
+
+  .heroGrid .imga {
+    margin-bottom: 0; /* Remove margin to align image and text in the same row */
+  }
+  
+  .heroGrid .contenta {
+    grid-column: span 2; /* Make the content span both columns */
+    text-align: center; /* Center text in a two-column layout */
+  }
+
+  .flexContainer01,
+  .flexContainer02 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
