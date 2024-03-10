@@ -15,6 +15,8 @@ header li {
   padding: 0px 5px;
 }
 
+
+
 .heroImg {
   background-color: #ffffff;
   display: grid;
@@ -62,6 +64,22 @@ header li {
   font-family: 'Epilogue', sans-serif;
 }
 
+/*
+.contenta button{
+font-family: 'Epilogue', sans-serif;
+font-size: 16px;
+color: white;
+border-radius: 0px;
+border: 1px solid #28282B;
+padding: 20px 30px;
+background-color: black;
+
+}
+
+*/
+
+/* hover*/
+
 .btn {
   font-family: 'Epilogue', sans-serif;
   display: inline-block;
@@ -95,6 +113,7 @@ header li {
   width: 562px;
   height: 562px;
 }
+
 footer {
   background-color: #ffffff;
   padding: 5px;
